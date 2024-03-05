@@ -23,8 +23,17 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Praktikum Layout Flutter'),
+        centerTitle: true,
       ),
-      body: // Isi dengan komponen layout selanjutnya
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(color: Colors.red, height: 100, width: 100),
+          Container(color: Colors.green, height: 50, width: 100),
+          Container(color: Colors.yellow, height: 100, width: 100),
+        ],
+      )
     );
   }
 }
